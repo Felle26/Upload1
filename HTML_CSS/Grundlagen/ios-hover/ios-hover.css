@@ -1,0 +1,10 @@
+#mein-hover{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    transition: 1s;
+}
+
+#mein-hover:hover{
+    background-color: red;
+}

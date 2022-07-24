@@ -1,0 +1,30 @@
+html, body{
+    height: 100%;
+}
+#absolut{
+    
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    background-color: aquamarine;
+    
+}
+
+#prozent{
+    width: 20%;
+    height: 20%;
+    background-color: #0f0;
+
+}
+body{
+    margin: 0;
+    font-size: 20px;
+}
+
+.em{
+    font-size: 2em;
+}
+
+.rem{
+    font-size: 2rem;
+}

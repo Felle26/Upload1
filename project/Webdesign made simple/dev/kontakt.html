@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Webdesign made Simple</title>
+
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./src/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./src/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./src/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f0f0f0">
+    <meta name="msapplication-config" content="./src/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+        <!-- ===================================================-->
+        <!-- === NAVIGATIONSLEISTE === -->
+        <!-- ===================================================-->
+<nav id="header-nav">
+
+    <div class="container" id="desktop-nav">
+        <div class="row">
+            <div class="col-6">
+                <a href="index.html" class="logo-link"><img src="./src/img/webdesign-logo.png"
+                        alt="Logo von Webdesign made Simple"></a>
+
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="leistungen.html">Leistungen</a></li>
+                    <li class="active"><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ===================================================-->
+    <!-- === MOBILE NAVIGATION === -->
+    <!-- ===================================================-->
+
+    <div class="container" id="mobile-nav">
+        <div class="row">
+            <div class="col-6">
+                <a href="index.html" class="logo-link"><img src="./src/img/webdesign-logo.png"
+                        alt="Das Logo von Webdesign made Simple"></a>
+
+                <div id="mobile-nav-dropdown" class="clearfix">
+                    <div id="mobile-nav-button"><span>&equiv;</span></div>
+
+                    <div id="mobile-nav-content" class=" clearfix">
+                        <ul>
+                            <li><a href="index.html">Startseite</a></li>
+                            <li><a href="leistungen.html">Leistungen</a></li>
+                            <li class="active"><a href="kontakt.html">Kontakt</a></li>
+                            <li><a href="impressum.html">Impressum</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</nav>
+
+        <!-- ===================================================-->
+        <!-- === HEADER - BANNER === -->
+        <!-- ===================================================-->
+    <header id="header-banner-klein"></header>
+
+        <!-- ===================================================-->
+        <!-- === Kontakt === -->
+        <!-- ===================================================-->
+<section id="kontaktbereich">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <header class="intro-container">
+                    <h1>Kontakt</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cum blanditiis aspernatur perspiciatis architecto reprehenderit harum!
+                        Minima at mollitia architecto quasi culpa quas. Similique incidunt ipsum ipsam quidem sunt assumenda ducimus.</p>
+                </header>
+            </div>
+        </div>
+        <form action="kontakt.html" method="post" id="kontakt-formular">
+            <div class="row">
+                <div class="col-3">
+                    <label for="vorname" class="screenreader"></label>
+                    <input type="text" name="vorname" placeholder="Vorname" id="vorname">
+                </div>
+                <div class="col-3">
+                    <label for="nachname" class="screenreader"></label>
+                    <input type="text" name="nachname" placeholder="Nachname" id="nachname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="email" class="screenreader"></label>
+                    <input type="text" name="email" placeholder="gib hier deine E-Mail Adresse ein!" id="email" pattern=".(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\]).*">
+                </div>
+            </div>
+            <div class="row">
+                <label for="nachricht" class="screenreader"></label>
+                <div class="col-6"><textarea name="Nachricht" id="nachricht" placeholder="Nachricht..." cols="30" rows="10"></textarea></div>
+            </div>
+            <div class="row">
+                <div class="col-6"><button class="btn-typ-3" type="submit" id="absenden-btn" name="absenden button">Senden</button></div>
+            </div>
+        </form>
+
+    </div>
+
+</section>
+
+
+
+
+        <!-- ===================================================-->
+        <!-- === FOOTER-BEREICH === -->
+        <!-- ===================================================-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <span>WEBDESIGN made Simple by Ruben Winkler &copy2018</span>
+                    <nav id="footer-nav"><a href="./impressum.html">Impressum</a></nav>
+    
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+    <script defer>document.addEventListener("touchstart", function () { }, true);</script>
+</body>
+</html>

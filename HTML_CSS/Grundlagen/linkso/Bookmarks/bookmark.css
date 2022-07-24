@@ -1,0 +1,16 @@
+h1{font-size: 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+
+div{
+    margin-bottom: 20px;
+    height: 300px;
+    width: 300px;
+    background-color:crimson;
+}
+
+#ziel{
+    border: 20px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+}

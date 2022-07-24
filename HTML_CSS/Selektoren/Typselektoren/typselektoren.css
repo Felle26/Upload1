@@ -1,0 +1,16 @@
+html{background-color: rgb(63, 63, 63);}
+body{
+    border: solid;
+    border-radius: 5px;
+    color: ivory;
+padding: 5px;}
+
+body h1 {color: grey;
+        border: inherit;
+    border-radius: inherit;}
+
+span{ color: grey;}
+span:hover{ color: red;}
+
+p{font-size: 30px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}

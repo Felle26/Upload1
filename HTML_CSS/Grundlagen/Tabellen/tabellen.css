@@ -1,0 +1,39 @@
+table{
+    margin-bottom: 2rem;
+}
+
+/* border, border-colapse, border-spacing */
+
+table#test01, table#test01 td, table#test01 th{
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+table#test02,
+table#test02 td,
+table#test02 th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* Backgroud-Color, Caption-side, empty-cells, width, table-layout*/
+
+#test03{
+    background-color: antiquewhite;
+    border-collapse: separate;
+    caption-side: bottom;
+    width: auto;
+
+}
+#test03 td{
+    width: 130px;
+    table-layout: auto;
+    empty-cells: hide;
+}
+

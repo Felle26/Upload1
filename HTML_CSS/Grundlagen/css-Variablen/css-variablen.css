@@ -1,0 +1,24 @@
+:root{
+    --blau: #1f4e8c;
+    --grau: #3d3f45;
+    --rahmen: 5px solid #a62c21
+    --primaere-schriftart: Arial;
+    --sekundaere-schriftart: Verdana;
+}
+
+body{
+    font-family: var(--primaere-schriftart, --sekundaere-schriftart);
+}
+
+#div-1{
+    
+    background-color: var(--blau);
+    border: var(--rahmen);
+    width: 300px;
+    height: 300px;
+}
+#div-2{
+    background-color: var(--grau);
+    width: 300px;
+    height: 300px;
+}

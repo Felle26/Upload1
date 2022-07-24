@@ -1,0 +1,4 @@
+p{background-color:grey;}
+
+p~p{background-color: blanchedalmond;
+width: 400px;}

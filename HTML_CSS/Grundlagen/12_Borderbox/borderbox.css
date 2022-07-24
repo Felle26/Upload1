@@ -1,0 +1,11 @@
+*{box-sizing: border-box;}/* Damit bleibt das Element bei der definierten Größe bei total 300x300px*/
+
+div{width: 300px;
+height: 300px;
+padding: 50px;
+background-color: grey;
+color: ivory;
+margin: 20px;}
+
+#div1{border: 20px solid red;}
+

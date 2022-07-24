@@ -1,0 +1,10 @@
+div{background-color: grey;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+color: ivory;
+width: 400px;/*  Dies gibt die Breite an */
+height: 350px;/* Dies gibt die höhe an */
+padding: 50px;/* Padding ist der Innenabstand des divs zum inhalt */
+margin: 100px;/* margin gibt den abstand nach aussen an */
+border: 10px solid black;/* Dies ist der Rand von 10px ist solid und schwarz */
+border-radius: 20px;} /* Dies macht runde ecken */

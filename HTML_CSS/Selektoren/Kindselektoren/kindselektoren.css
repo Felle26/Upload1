@@ -1,0 +1,10 @@
+p > span{color: red;
+font-weight: lighter;}
+p > span > b{font-size: 20px;}
+body{font-size: 30px;
+background-color: rgb(65,65,65);}
+p > span > i{color:aliceblue}
+p{color: antiquewhite;}
+span{font-family: 'Courier New', Courier, monospace;
+font-weight: bolder;}
+

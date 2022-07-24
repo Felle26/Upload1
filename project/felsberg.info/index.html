@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Felsberg´s | Portfolio</title>
+
+   <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/font-awesome/fontawesome-free-6.0.0-beta3-web/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./src/js/mobile.js"></script>
+</head>
+
+<body>
+    <!---Logo & Navigation-->
+    <Header>
+        <div id="logo">
+            <a href="felsberg.info">
+                <img src="./src/img/logo.png" alt="felsberg.info">
+            </a>
+        </div>
+
+        <nav>
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            <ul>
+                <a href="#Home"><li>Home</li></a>
+                <a href="#About"><li>About</li></a>
+                <a href="#News"><li>News</li></a>
+                <a href="#Projects"><li>Projects</li></a>
+                <a href="#Contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </Header>
+    
+    <!---Home-->
+
+
+    <Section id="Home">
+        <hr id="hr-hidden">
+        <H1>Felsberg</H1>
+        <H2>Portfolio</H2>
+        
+        <a href="#About"><img src="./src/img/arrowdown.png" alt="Pfeil runter"></a>
+    </Section>
+    <!---About-->
+
+
+    <section id="About">
+        <h3>About</h3>
+        <hr>
+        <img Class="Logo" src="./src/img/logo.png" alt="logo">
+        <h4>Sebastian Felsberg</h4>
+        <p>Mein Name ist Sebastian Felsberg, ich habe Anfang 2022 mit der Webentwicklung angefangen.
+            auf dieser Webseite soll mein Lernfortschritt mit der Welt geteilt werden.</p>
+        
+    </section>
+
+    
+    <!---News-->
+
+
+    <section id="News">
+        <h3>News</h3>
+        <hr>
+        <ul>
+            <li>14.03.2022 |    Neue Version der Webseite</li>
+            <li>24.02.2022 |    Meiner Webseite wurde ein Statischer Header hinzugefügt</li>
+            <li>24.02.2022 |    in der Meine Projekte wurde mein Taschenrechner Projekt hinzugefügt</li>
+            <li>24.02.2022 |    Der Scrollbar wurde optisch verändert</li>
+        </ul>
+        
+    </section>
+
+    
+    <!---Projects-->
+
+
+    <section id="Projects">
+        <h3>Projects</h3>
+        <hr>
+
+        <ul>
+            <li><a href="./P/pagev01/index.html"><img src="./src/img/Project_01.svg" alt="1. Webseiten Version"></a></li>
+            <li><a href="./P/calc001/calc001.html"><img src="./src/img/Project_02.svg" alt="Taschenrechner"></a></li>
+            <li><a href="#"><img src="./src/img/comingsoon.svg" alt="coming soon..."></a></li>
+            <li><a href="#"><img src="./src/img/comingsoon.svg" alt="coming soon..."></a></li>
+            <li><a href="#"><img src="./src/img/comingsoon.svg" alt="coming soon..."></a></li>
+            <li><a href="#"><img src="./src/img/comingsoon.svg" alt="coming soon..."></a></li>
+        </ul>
+    </section>
+
+
+    <!--Contact-->
+
+
+    <section id="Contact">
+        <h3>Contact</h3>
+        <hr>
+        <form action="index.html#Contact" method="post">
+            <input Class="Input_text" type="email" tabindex="1" placeholder="Email Adresse"><br>
+            <input Class="Input_text" type="text" tabindex="2" placeholder="Betreff"><br>
+            <textarea Class="Input_text" tabindex="3" placeholder="Noch ohne Funktion..."></textarea><br>
+            <input class="button" tabindex="4" type="submit" >
+        </form>
+        <a href="#Home"><img class="Arrows" src="./src/img/arrowup.png" alt="Home"></a>
+    </section>
+
+
+    <!---Footer-->
+
+
+    <footer>
+        <hr>
+        &copy; 2022 Sebastian Felsberg | <a href="impressum.html">Impressum</a>
+    </footer>
+
+   
+    
+
+
+    
+</body>
+</html>

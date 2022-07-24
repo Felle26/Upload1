@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+
+body{
+    font-size: 30px;
+    font-family:'Times new Roman';
+}
+#test1{ font-family: serif;}
+#test2{ font-family: sans-serif;}
+#test3{ font-family: cursive;}
+#test4{ font-family: fantasy;}
+#test5{ font-family: monospace;}
+#test6{ font-family: 'Roboto', sans-serif;}
+#test7{ font-family: 'Square Peg', cursive;}
+
+@font-face {
+    font-family: "bebasNeue" ;
+    src: url(./BebasNeue-Regular.ttf) format("truetype"), url(./BebasNeue-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+#Lokal{ font-family: "bebasNeue"; }
+/* True Type fonts    = .ttf -  truetype
+embedded Open Type    = .eot -  embedded-opentype
+open Type             = .otf -  otf
+Web open Font format  = .woff - woff -  geeignet für Moderne Browser
+Web open Font format2 = .woff2 -woff2 - geeignet für Modernste Webbrowser
+SVG Fonts - SVG Shapes= .svg -          für alte IOS Systeme
+*/

@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+p{
+    background-color: gray;
+    color:aliceblue
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}

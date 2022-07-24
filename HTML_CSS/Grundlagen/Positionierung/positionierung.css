@@ -1,0 +1,48 @@
+*{margin: 0;}
+#relativesDIV{
+    width: 400px;
+    height: 400px;
+    background-color: grey;
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+
+#absolutesDIV{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    transition: 300ms;
+    
+}
+
+body{height: 10000px;}
+
+#fixed{
+    transition: 400ms;
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#sticky{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: sticky;
+    top: 20px;
+    margin-top: 350px;
+}
+span{
+    position: static;
+}
+#fixed:hover{
+    transition: 400ms;
+    transform:rotate(45deg)
+}

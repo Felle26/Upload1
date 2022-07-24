@@ -1,0 +1,421 @@
+html, body{margin: 0; padding: 0; height: 100%; text-align: center; background-color: rgb(22, 22, 22);}
+
+section{min-height: 100%;}
+
+a{text-decoration: none;}
+
+li{list-style-type: none;}
+
+h1, h2, h3{ font-family: 'Open Sans', sans-serif; font-weight: 500; color: ivory; text-transform: uppercase; }
+
+h3{ padding-top: 8%; font-size: 40px; margin-bottom: 5px; }
+
+h4, p{ font-family: 'Open Sans', sans-serif; color: ivory; }
+
+hr{ width: 200px; height: 5px; background:ivory; border: 0; margin:0 auto 40 auto; }
+
+#logo, li, img, .button, .fa-bars{ transition: 300ms;-webkit-transition: 300ms;-moz-transition: 300ms;-o-transition: 300ms; }
+
+.fa-bars{display: none;
+    font-size: 0px;}
+
+/* Header*/
+
+header{
+    width: 100%;
+    height: 130px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(50,50,50,1),rgba(50,50,50,0.9), rgba(50,50,50,0));
+    z-index: 1;
+}
+
+#logo{ width: 65px; float: left; margin-left: 30px; margin-top: 10px; }
+
+#logo img{ width: 100%; }
+
+#logo:hover{ opacity: 0.5; }
+
+header nav{ float: right; margin: 2px 50px 0 0; }
+
+header nav ul li { float: left; margin-left: 25px; }
+
+header nav ul li { font-family: 'Open Sans', sans-serif;; font-weight: 500;font-size: 25px; color: ivory; transition: 300ms;-webkit-transition: 300ms;-moz-transition: 300ms;-o-transition: 300ms; }
+
+header nav ul li:hover{ padding-top: 3px; }
+
+header nav ul li:hover{ color: grey; transition: 300ms; -webkit-transition: 300ms; -moz-transition: 300ms; -o-transition: 300ms; }
+
+/* Home*/
+
+#Home{
+    background: url(./../img/Moon.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#Home h1{
+    margin: 240px auto 0 auto;
+    font-size:  100px;
+}
+
+#hr-hidden{
+    padding: none;
+    size: 0px;
+    background: rgb(22, 22, 22);
+}
+
+#Home h2{
+    margin: 0 auto 0 auto;
+}
+
+#Home img{
+    width: 64px;
+    margin-top: 210px;
+    opacity: 0.7;
+}
+
+#Home img:hover{
+    opacity: 1;
+}
+
+/* About*/
+
+#About{
+    min-height: 100vh;
+    
+}
+
+#About h4{
+    font-size: 25px;
+
+}
+
+#About p{
+    width: 70vw;
+    font-size: 20px;
+    margin: 0px auto 0px auto;
+}
+
+.Arrows{
+    width: 64px;
+    margin-top: 210px;
+    opacity: 1;
+}
+
+.Arrows:hover{
+    opacity: 0.5;
+}
+
+/* News*/
+
+#News h4{
+    font-size: 25px;
+}
+
+#News ul{
+    padding-top: 50px;
+}
+#News ul li{padding-left: 150px; text-align: left; text-decoration: none; color: ivory;font-size: 20px; font-family: 'Open Sans', sans-serif; font-weight: 500;}
+
+/* Projects */
+
+#Projects{
+    width:90vw;
+    margin: 0 auto 0 auto
+}
+
+#Projects ul{
+    padding: 50px 0 0 0;
+}
+
+#Projects ul li{
+    width: 33.3%;
+    float: left;
+    margin-bottom: 15px;
+}
+#Projects img{
+    width: 280px;
+    height: 170px;
+    border-radius: 5px;
+}
+
+#Projects img:hover{
+    transform: scale(1.1); -webkit-transform: scale(1.1); -moz-tranform:scale(1.1); -o-transform: scale(1.1);
+    box-shadow: 0 5px 5px rgba(150,150,150,.3);
+}
+/* Contact*/
+form input, textarea{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 3px solid;
+    border-color: rgb(90,90,90);
+    outline: none;
+}
+form input:first-child{
+    margin-top: 50px;
+}
+form input{
+    
+    width: 552px;
+    height: 30px;
+}
+#Contact textarea{
+    width: 550px;
+    height: 200px;
+    resize: none;
+}
+
+.Input_text{
+    color:rgb(22, 22, 22);
+    padding-left: 10px;
+}
+
+::-webkit-input-placeholder{color: rgb(150,150,150);}
+::-moz-placeholder{color: rgb(150,150,150);}
+:-ms-input-placeholder{color: rgb(150,150,150);}
+:-moz-placeholder{color: rgb(150,150,150);}
+
+.button{
+    border: 2px;
+    background-color: whitesmoke;
+    color:rgb(22, 22, 22);
+    size: 580px;
+    width: 560px;
+    height: 50px;
+}
+.button:hover{
+    background-color: rgb(50, 50, 50);
+    color: ivory
+}
+
+/* Footer*/
+
+footer{background-image: linear-gradient(to top, rgba(50,50,50,1),rgba(50,50,50,0.9), rgba(50,50,50,0));
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: ivory;
+    font-size: 15px;
+    
+}
+footer hr{ height: 1px;}
+
+
+/* MEDIA QUERRIES*/
+
+/* TABLETS*/
+@media screen and (max-width: 1024px){
+   
+    #logo{
+        width: 30px;
+        margin-top: 5px;
+    }
+    header nav{ float: right; margin: 2px 5px 0 0; }
+
+    header nav ul li{
+        font-size: 16px;
+    }
+    #Home h1{
+        margin: 240px auto 0 auto;
+        font-size:  80px;
+    }
+    #Home h2{
+        font-size: 20px;
+    }
+    #News ul li{
+        padding-left: 20px; 
+        text-align: left; 
+        text-decoration: none; 
+        color: ivory;
+        font-size: 16px; 
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+    
+    #Projects ul li{
+        width: 100%;
+        float: none;
+    }
+    #Projects img{
+        width: 55%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    #Projects ul{
+        padding: 0;
+    }
+    form input, #Contact textarea{
+        width: 60%;
+    }
+    .button{
+        width: 62%;
+    }
+    #News ul li{
+        padding-top: 10px;
+    }
+
+}
+
+
+/* MOBILE*/
+
+@media screen and (max-width: 480px){
+    header{
+        height: auto;
+    }
+    #logo{
+        width: 20px;
+        margin-top: 1px;
+    }
+    header nav{ 
+        margin: 0;
+        float: none; 
+        }
+  
+    .fa-bars{
+        font-size: 20px;
+        color: ivory;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        text-align: right;
+        margin: -25px 30px 0 0;
+    }
+
+    .fa-bars:hover{
+        opacity: 0.5;
+    }
+
+    header nav ul{
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    header nav ul.open{
+        height: auto;
+    }
+    header nav ul li{
+        width: 100%;
+        padding:5px 0;
+        font-size: 11px;
+        border-top: 1px solid rgb(150,150,150);
+        background-color: rgb(22, 22, 22);
+    }
+
+    header nav ul li:hover{
+        background-color: rgb(150,150,150);
+        color: rgb(22, 22, 22);
+    }
+    #Home h1{
+        margin: 200px auto 0 auto;
+        font-size:  60px;
+    }
+    #About h4{
+        font-size: 20px;
+    
+    }
+    
+    #About p{
+        width: 70vw;
+        font-size: 15px;
+        margin: 0px auto 0px auto;
+    }
+    #Home h2{
+        font-size: 15px;
+    }
+    #News ul li{
+        padding-left: 10px;
+        padding-top: 10px;
+        text-align: left; 
+        text-decoration: none; 
+        color: ivory;
+        font-size: 15px; 
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;}
+    
+        #Projects ul li{
+        width: 100%;
+        float: none;
+    }
+    #Projects img{
+        width: 55%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    #Projects ul{
+        padding: 0;
+    }
+    #Projects ul li{
+        padding: 0;
+        margin: 0;
+        align-content: left;
+    }
+    form input, #Contact textarea{
+        width: 60%;
+    }
+    .button{
+        width: 62%;
+    }
+
+}
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: ivory;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(50,50,50);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(30,30,30);
+  }
+
+
+  /*==============================
+        IMPRESSUM
+    ============================*/
+
+
+   body > h1{
+        margin-top: 5rem;
+    }
+
+    #back-btn{
+        margin-top: 30px;
+        font-size: 30px;
+        border: 2px solid gray;
+        color: gray;
+        padding: 1rem;
+    }
+
+    #back-btn:hover{
+        border: 2px solid red;
+        color: red;
+    }
+    #back-btn:active{
+        border: 2px solid gray;
+        color: gray;
+    }
+    #back-btn:link{
+        border: 2px solid gray;
+        color: gray;
+    }

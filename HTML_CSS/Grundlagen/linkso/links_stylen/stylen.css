@@ -1,0 +1,27 @@
+h1
+{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:link
+{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* a:focus{} */
+
+a:visited
+{
+    color: green;
+}
+
+a:hover{
+    color:coral;
+}
+
+a:active{
+    color: aliceblue;
+}

@@ -1,0 +1,6 @@
+html {background-color: grey;}
+b ~ span > b {color:ivory}
+p span.warnung {color: red;}
+.warnung ~ b {color: aquamarine;}
+
+html head ~ body > p > b ~ #wichtig{color: beige; font-size: 30px;}

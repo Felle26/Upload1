@@ -1,0 +1,22 @@
+.btn{
+    width: 200px;
+    height: 200px;
+    border: 2px solid gray;
+    margin-bottom: 2rem;
+}
+#play {
+    background: url(./Sprite+Play+und+Pause.png);
+
+}
+
+#play:hover {
+    background: url(./Sprite+Play+und+Pause.png) -200px 0px;
+}
+
+#pause{
+    background: url(./Sprite+Play+und+Pause.png) 0 -200px; 
+
+}
+#pause:hover {
+    background: url(./Sprite+Play+und+Pause.png) -200px -200px;
+}

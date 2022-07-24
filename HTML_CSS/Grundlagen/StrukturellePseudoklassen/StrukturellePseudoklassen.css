@@ -1,0 +1,96 @@
+:root{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p:empty{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+p:empty:hover{
+    background-color: green;
+}
+.container :first-child{
+    font-weight: bold;
+}
+
+.container :last-child{
+    text-decoration: underline;
+}
+
+.container :nth-child(5){
+    color: red;
+}
+
+.container :nth-child(even){
+    background-color: grey;
+}
+
+.container :nth-child(odd){
+    background-color: antiquewhite;
+}
+
+.container :nth-child(3n+1){
+    text-decoration: line-through;
+}
+
+/* 1 4 7 10 13 16 19  3*0+1=1 , 3*1+1=4 , 3*2+1=7 */
+
+.container :nth-last-child(5){
+    color: blue;
+}
+
+.container :nth-last-child(even){
+    width: 400px;
+}
+.container :nth-last-child(odd){
+    width: 200px;
+}
+
+.container :nth-last-child(3n+1) {
+    text-decoration: underline;
+}
+
+:only-child{
+    border: 5px dotted red;
+    border-radius: 10px;
+}
+
+.container div:first-of-type{
+    color: yellow;
+}
+.container :last-of-type{
+    color:pink;
+}
+
+.container div:nth-of-type(3){
+    height: 50px;
+}
+.container div:nth-of-type(even){
+    height: 100px;
+}
+.container div:nth-of-type(odd){
+    height: 200px;
+}
+.container div:nth-of-type(3n+1){
+    height: 400px;
+}
+
+.container div:nth-last-of-type(3) {
+    text-align: right;
+}
+
+.container div:nth-last-of-type(even) {
+    border: 2px solid black
+}
+
+.container div:nth-last-of-type(odd) {
+    border: 2px solid red;
+}
+
+.container div:nth-last-of-type(3n+1) {
+    text-align: center;
+}
+body :only-of-type{
+    background-color: purple;
+}

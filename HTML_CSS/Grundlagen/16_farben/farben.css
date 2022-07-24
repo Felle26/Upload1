@@ -1,0 +1,63 @@
+#vordefiniertefarben{
+
+background-color: black;
+color: deeppink;
+width: 400px;
+height: 400px;
+margin: 0;
+font-size: 100px;
+box-sizing: border-box;
+padding: 10px;
+padding-top: 130px;
+text-align: center;
+}
+
+#hexadezimal{
+
+    background-color: #00FF9f;
+    color: #0FF;
+    width: 400px;
+    height: 400px;
+    margin: 0;
+    font-size: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 130px;
+    text-align: center;
+    }
+.hintergrund{
+    background-color: rgb(0,0,0);
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    box-sizing: border-box;
+    }
+    
+
+#rgba{
+
+    background-color: rgba(50, 130, 250, 1);
+    color: rgba(200, 000, 200, 1);
+    width: 400px;
+    height: 400px;
+    margin: 0;
+    font-size: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 130px;
+    text-align: center;
+    }
+
+#hsl{
+    background-color: hsl(167, 77%, 50%);
+    color: hsla(150, 90, 80, 0.1);
+    width: 400px;
+    height: 400px;
+    margin: 0;
+    font-size: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 130px;
+    text-align: center;
+    }
+        

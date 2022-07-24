@@ -1,0 +1,10 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+section{
+    width: 90%;
+    height: 300px;
+    display: flex;
+    align-content: center;
+}

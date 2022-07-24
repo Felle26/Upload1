@@ -1,0 +1,9 @@
+#test{
+    background-color: gray;
+    width: 400px;
+    padding: 2rem;
+    margin: 10rem;
+    /* transform: rotateZ(30deg);  *//* drehen */
+   /*  transform: skewX();  <--- verzerren*/
+}
+

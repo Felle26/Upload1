@@ -1,0 +1,20 @@
+.list1{
+    list-style-type: square;
+    
+}
+.list2{
+    list-style-position: inside;
+}
+
+.list3{
+    list-style-image: url(pfeil.png);
+}
+.list4{
+    list-style: square inside url(pfeil.png);
+}
+.list5 > li{
+    display: inline-block;
+}
+.list4:hover{
+    color: green;
+}

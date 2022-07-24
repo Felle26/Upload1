@@ -1,0 +1,18 @@
+html{ 
+    background-color: 
+    grey;}
+
+h1{ 
+    color: ivory; 
+    font-size: 100px;}
+
+p { 
+    color: yellow; 
+    font-size: 30px;}
+
+span{ 
+    font-weight: bold; 
+    color: yellowgreen;}
+    
+h1:hover{ 
+    text-decoration: underline; }

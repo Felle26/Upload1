@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            display: inline-block;
+            border-radius: 5px;
+            color:aliceblue;
+            border: 3px solid gray;
+
+        }
+        html{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="./../forms/forms.html" method="get">
+        <fieldset>
+            <legend>Personen Daten</legend>
+            <label for="Name">Name:</label>
+            <input type="text" name="Name" id="Name" placeholder="Name"><br><br>
+            <fieldset>
+                <legend>Geschlecht</legend>
+                <label for="M">Männlich</label>
+                <input type="radio" name="geschlecht" value="M" id="M">
+                <label for="W">Weiblich</label>
+                <input type="radio" name="geschlecht" value="W" id="W">
+                <label for="D">Divers</label>
+                <input type="radio" name="geschlecht" value="D" id="D"><br><br>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Login-Daten</legend>
+            <label for="email">E-Mail:</label>
+            <input type="email" name="email" id="email" placeholder="E-Mail Adresse"><br><br>
+            <label for="passwd">Passwort:</label>
+            <input type="password" name="password" id="passwd" placeholder="Dein Kennwort"><br><br>
+            <label for="passwdw">Passwort wiederholen:</label>
+            <input type="password" name="password" id="passwdw" placeholder="Dein Kennwort"><br><br>
+            <button type="submit">Absenden</button>
+            <button type="reset">reset</button>
+        </fieldset>
+          
+    </form>
+    
+</body>
+</html>
