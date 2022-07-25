@@ -1,0 +1,195 @@
+/*=============================
+*           FARBEN
+*===============================*/
+
+
+
+
+
+/*=============================
+*          GENERELLES
+*===============================*/
+
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    padding-top: 4rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.screenreader {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+/*=============================
+*           GRID-SYSTEM
+*===============================*/
+.container{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-1{
+    width: 16.666%;
+}
+
+.col-2{
+    width: 33.333%;
+}
+
+.col-3{
+    width: 50%;
+}
+
+.col-4{
+    width: 25%;
+}
+
+.col-6{
+    width: 100%
+}
+
+/*=============================
+*         DESKTOP-NAVIGATION
+*===============================*/
+
+header .container{
+    width: 100%;
+    display: inline-block;  
+    position: sticky;
+    z-index: 10;
+    background-color: gray;
+}
+header .container ul{
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-direction: row;
+    padding: 0;
+    float: right;
+    display: flex;
+}
+
+header .container ul li {
+    margin-right: 1rem;
+    height: auto;
+    list-style-type: none;
+}
+
+header .container .btn-menu {
+    color: black;
+    display: inline;
+    min-width: 110px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+header .container .active {
+    color: greenyellow !important;
+
+}
+
+header .container .btn-menu:hover{
+    color: antiquewhite;
+}
+
+header .container .btn-menu:link{
+    color: black;
+}
+
+/*=============================
+*         MOBILE-NAVIGATION
+*===============================*/
+
+#mobile-nav{
+    display: none;
+}
+
+#mobile-nav-button span{
+    position: absolute;
+
+}
+
+#mobile-nav-content>ul>li {
+    display: block;
+    background-color: gray;
+    height: 50px;
+    padding: 0 1.2rem;
+    text-align: center;
+}
+
+#mobile-nav-dropdown {
+    position: relative;
+    display: inline;
+    float: right;
+    cursor: pointer;
+}
+#mobile-nav-content {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    display: none;
+}
+
+#mobile-nav-dropdown:hover>#mobile-nav-content {
+    display: block;
+}
+
+/* MOBILE NAVIGATION FERTIG STELLEN
+
+
+/*=============================
+*         MAIN LOGO
+*===============================*/
+
+#main-logo{
+    height: 600px;
+}
+
+#main-logo img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 400px;
+}
+
+/*=============================
+*         LEISTUNGEN-BEREICH
+*===============================*/
+
+#leistungen-box{
+    margin: 0;
+    padding: 0;
+}
+
+#leistungen-box h1{
+    color: greenyellow;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

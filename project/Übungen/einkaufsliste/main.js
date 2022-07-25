@@ -6,7 +6,7 @@ function addbuy(){
           </span>
           <span class="mdl-list__item-secondary-action">
           <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="list-switch-1">
-          <input type="checkbox" id="list-switch-1" class="mdl-switch__input" unchecked />
+          <input type="checkbox" id="list-switch-1" class="mdl-switch__input" checked />
           </label>
           </span>
           </li>`;

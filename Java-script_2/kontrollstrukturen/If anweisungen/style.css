@@ -1,0 +1,38 @@
+*{
+    background-color: black;
+}
+
+#test{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 500px;
+}
+
+#gerade{
+    display: inline;
+        margin-left: auto;
+        margin-right: auto;
+        color: yellow;
+        background-color: black;
+        font-size: 35px;
+
+}
+
+#jung{
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+    background-color: black;
+    font-size: 35px;
+}
+
+#alt{
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    color: green;
+    font-size: 35px;
+    background-color: black;
+}
