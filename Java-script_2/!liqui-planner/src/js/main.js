@@ -17,12 +17,11 @@ const euro = 100;
 
 // if anweisung
 
-if(typ_1 === "e"){
-    Einnahme = Einnahme + betrag_1
-}else if(typ_1 === "a"){
-    ausgaben = ausgaben + betrag_1
-} else {
-    console.log(`${typ_1} ist nicht definiert`)
+const eintrag_ausgeben = function () {
+    console.log(`Titel: ${titel}
+Typ: ${typ}
+Betrag: ${betrag / euro} €
+Datum ${datum}`);
 };
 
 console.log(`du hast ${titel_1}
@@ -31,7 +30,6 @@ es kam ${betrag_1 /euro} € und
 du hast es am ${datum_1} getätigt`);
 
 
-//Eintrag 2
 
 let titel_2 = prompt("was war es?");
 let typ_2 = prompt("e oder a");
