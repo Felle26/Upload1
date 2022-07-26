@@ -1,67 +1,56 @@
 "use strict";
 
-//Bilanz
-
 let Einnahme = 0;
 let ausgaben = 0;
 let bilanz = 0;
-
-
-//Eintrag 1
-
-let titel_1 = prompt("was war es?");
-let typ_1 = prompt("e oder a");
-let betrag_1 = parseInt(prompt("Der Betrag in cent:"));
-let datum_1= prompt("Wann war es , JJJJ-MM-TT");
 const euro = 100;
 
-// if anweisung
+let titel,
+    typ,
+    betrag,
+    datum;
 
-const eintrag_ausgeben = function () {
-    console.log(`Titel: ${titel}
-Typ: ${typ}
-Betrag: ${betrag / euro} €
-Datum ${datum}`);
+const eintrag_erfassen = function () {
+    titel = prompt("was war es?");
+    typ = prompt("e oder a");
+    betrag = parseInt(prompt("Der Betrag in cent:"));
+    datum = prompt("Wann war es , JJJJ-MM-TT");
+}
+
+const eintrag_ausgeben = function (titel, typ, betrag, datum) {
+        return (`Titel: ${titel}
+    Typ: ${typ}
+    Betrag: ${betrag / euro} €
+    Datum ${datum}`)
 };
 
-console.log(`du hast ${titel_1}
-dies war eine ${typ_1}
-es kam ${betrag_1 /euro} € und
-du hast es am ${datum_1} getätigt`);
-
-
-
-let titel_2 = prompt("was war es?");
-let typ_2 = prompt("e oder a");
-let betrag_2 = parseInt(prompt("Der Betrag in cent:"));
-let datum_2 = prompt("Wann war es , JJJJ-MM-TT")
-
-// if anweisung
-
-if (typ_2 === "e") {
-    Einnahme = Einnahme + betrag_2
-} else if (typ_2 === "a") {
-    ausgaben = ausgaben + betrag_2
-} else {
-    console.log(`${typ_2} ist nicht definiert`)
+const eintrag_mit_gesamtbilanz_verrechnen = function (typ, betrag) {
+    if (typ === "e") {
+        Einnahme = Einnahme + betrag;
+        bilanz = bilanz + betrag;
+    } else if (typ === "a") {
+        ausgaben = ausgaben + betrag
+        bilanz = bilanz - betrag;
+    } else {
+        console.log(`${typ} ist nicht definiert`)
+    }
 };
 
-console.log(`du hast ${titel_2}
-dies war eine ${typ_2}
-es kam ${betrag_2 /euro} € und
-du hast es am ${datum_2} getätigt`);
+const gesamt_bilanz_ausgeben = function (Einnahme, ausgaben, bilanz) {
+        console.log(`Einnahmen: ${Einnahme / euro}€
+    Ausgaben: ${ausgaben / euro}€
+    Bilanz: ${bilanz / euro}€
+    Deine Bilanz ist positiv: ${bilanz >= 0}`
+    );
+};
 
-//Log der Einnahmen und Ausgaben in ct
+const eintrag_hinzufuegen = function(){
+    eintrag_erfassen();
+    console.log(eintrag_ausgeben(titel, typ, betrag, datum));
+    eintrag_mit_gesamtbilanz_verrechnen(typ, betrag);
+    gesamt_bilanz_ausgeben(Einnahme, ausgaben, bilanz);
+};
 
-console.log(Einnahme);
-console.log(ausgaben);
-
-//ausrechnen der Bilanz und loggen der Bilanz
-
-bilanz = Einnahme - ausgaben;
-
-console.log(`Dein Kontostand beträgt ${bilanz / euro} €`);
-
-let positiv  = bilanz >=0;
-
-console.log(`deine Bilanz ist Positiv: ${positiv}`);
+eintrag_hinzufuegen();
+eintrag_hinzufuegen();
+eintrag_hinzufuegen();
