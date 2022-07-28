@@ -3,15 +3,15 @@
 let Haushaltsbuch = {
     euro: 100,
     gesamt_bilanz:{
-        bilanz: 0,
-        einnahmen: 0,
-        ausgaben:0
+        bilanz: null,
+        einnahmen: null,
+        ausgaben: null
     },
     neuer_eintrag: {
-        titel:"Titel",
-        typ: "leer",
-        betrag: 0,
-        datum: 0
+        titel:null,
+        typ: null,
+        betrag: null,
+        datum: null
     },
     eintrag_erfassen() {
         this.neuer_eintrag.titel = prompt("was war es?");
@@ -21,26 +21,29 @@ let Haushaltsbuch = {
     },
     eintrag_ausgeben() {
         return (`Titel: ${this.neuer_eintrag.titel}
-    Typ: ${this.neuer_eintrag.typ}
-    Betrag: ${this.neuer_eintrag.betrag / this.euro} €
-    Datum ${this.neuer_eintrag.datum}`)
+Typ: ${this.neuer_eintrag.typ}
+Betrag: ${this.neuer_eintrag.betrag / this.euro} €
+Datum ${this.neuer_eintrag.datum}`)
     },
     eintrag_mit_gesamtbilanz_verrechnen() {
-        if (this.neuer_eintrag.typ === "e") {
-            this.gesamt_bilanz.einnahmen += this.neuer_eintrag.betrag;
-            this.gesamt_bilanz.bilanz += this.neuer_eintrag.betrag;
-        } else if (this.neuer_eintrag.typ === "a") {
-            this.gesamt_bilanz.ausgaben += this.neuer_eintrag.betrag;
-            this.gesamt_bilanz.bilanz -= this.neuer_eintrag.betrag;
-        } else {
-            console.log(`${this.neuer_eintrag.typ} ist nicht definiert`)
-        }
+        switch (this.neuer_eintrag.typ){
+            case "e":
+                this.gesamt_bilanz.einnahmen += this.neuer_eintrag.betrag;
+                this.gesamt_bilanz.bilanz += this.neuer_eintrag.betrag;
+                break;
+            case "a":
+                this.gesamt_bilanz.ausgaben += this.neuer_eintrag.betrag;
+                this.gesamt_bilanz.bilanz -= this.neuer_eintrag.betrag;
+                break;
+            default:
+            console.log(`${this.neuer_eintrag.typ} ist nicht definiert`);
+        };
     },
     gesamt_bilanz_ausgeben() {
         console.log(`Einnahmen: ${this.gesamt_bilanz.einnahmen / this.euro}€
-    Ausgaben: ${this.gesamt_bilanz.ausgaben / this.euro}€
-    Bilanz: ${this.gesamt_bilanz.bilanz / this.euro}€
-    Deine Bilanz ist positiv: ${this.gesamt_bilanz.bilanz >= 0}`
+Ausgaben: ${this.gesamt_bilanz.ausgaben / this.euro}€
+Bilanz: ${this.gesamt_bilanz.bilanz / this.euro}€
+Deine Bilanz ist positiv: ${this.gesamt_bilanz.bilanz >= 0}`
         );
     },
     eintrag_hinzufuegen() {
