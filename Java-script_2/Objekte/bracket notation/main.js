@@ -1,14 +1,4 @@
 "use strict";
-
-// let iban = "DE170503515300042";
-// let bic = "WEASEPXXHK";
-// let kontostand = 3500;
-// let aktiv = true;
-
-//Konto Inhaber
-
-
-//Konten
 let konto_1 = {
     iban: "DE170503515300042",
     bic: "WEASEPXXHK",
@@ -21,8 +11,6 @@ let konto_1 = {
     kontostand: 3500,
     aktiv: true
 };
-
-console.log(konto_1);
 
 let konto_2 = {
     inhaber_2: {
@@ -37,7 +25,34 @@ let konto_2 = {
     aktiv: true
 };
 
-console.log(konto_2);
+//Werte auslesen (Bracket Notation)
+
+let Wert_1 = konto_1["iban"];
+
+console.log(Wert_1);
+
+let Wert_2 = konto_1["inhaber_1"]["geschlecht"];
+
+console.log(Wert_2);
+
+// Eigenschaften Setzen (Bracket Notation)
+
+konto_2["abhebelimit"] = 2000;
+
+console.log(konto_2)
+
+//Werte setzen bzw. ändern
+
+konto_1["kontostand"] = 3000;
+
+console.log(konto_1["kontostand"]);
+
+//Wieso Bracket Notation?
+ let Eigenschaften = "iban";
+ let Wert_3 =konto_1[Eigenschaften];
+
+ console.log(Wert_3);
+
 
 let auto = {
     Marke: "Kia",
@@ -52,6 +67,16 @@ let auto = {
         Panoramadach: false
     },
     Zustand: "gebraucht",
-    Preis: 15000
+    Preis: 136000
 }
-console.log(auto);
+
+
+let FahrzeugMarke = "Marke";
+let FahrzeugModell = "Modell";
+
+auto[FahrzeugMarke] = "Mercedes-Benz";
+auto[FahrzeugModell] = "GT Coupe V8";
+
+auto["PS"] = 800;
+
+console.log(`Ein ${auto["Marke"]} ${auto["Modell"]} hat über ${auto["PS"]} PS!`)

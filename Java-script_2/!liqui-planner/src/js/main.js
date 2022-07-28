@@ -8,8 +8,8 @@ let Haushaltsbuch = {
         ausgaben:0
     },
     neuer_eintrag: {
-        titel:"lohn",
-        typ: "e",
+        titel:"Titel",
+        typ: "leer",
         betrag: 0,
         datum: 0
     },

@@ -1,14 +1,4 @@
 "use strict";
-
-// let iban = "DE170503515300042";
-// let bic = "WEASEPXXHK";
-// let kontostand = 3500;
-// let aktiv = true;
-
-//Konto Inhaber
-
-
-//Konten
 let konto_1 = {
     iban: "DE170503515300042",
     bic: "WEASEPXXHK",
@@ -21,8 +11,6 @@ let konto_1 = {
     kontostand: 3500,
     aktiv: true
 };
-
-console.log(konto_1);
 
 let konto_2 = {
     inhaber_2: {
@@ -37,7 +25,14 @@ let konto_2 = {
     aktiv: true
 };
 
-console.log(konto_2);
+console.log(`${konto_1.inhaber_1.Vorname} ${konto_1.inhaber_1.Nachname} hat ${konto_1.kontostand} € auf seinem Konto`);
+
+// Eigenschaften Setzen (Dot Notation)
+konto_1.abhebelimit = 1000;
+
+//Werte setzen bzw. ändern
+
+konto_1.kontostand = 3000;
 
 let auto = {
     Marke: "Kia",
@@ -52,6 +47,11 @@ let auto = {
         Panoramadach: false
     },
     Zustand: "gebraucht",
-    Preis: 15000
+    Preis: 136000
 }
-console.log(auto);
+
+auto.ps = 800;
+auto.Marke = "Mercedes-Benz"
+auto.Modell = "AMG GT Coupe V8"
+
+console.log(`Ein ${auto.Marke} ${auto.Modell} hat über ${auto.ps} PS.`)
