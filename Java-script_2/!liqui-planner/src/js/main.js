@@ -62,4 +62,4 @@ let Haushaltsbuch = {
 Haushaltsbuch.eintrag_hinzufuegen()
 Haushaltsbuch.eintrag_hinzufuegen()
 Haushaltsbuch.eintrag_hinzufuegen()
-// console.log(Haushaltsbuch);
+console.log(Haushaltsbuch);
