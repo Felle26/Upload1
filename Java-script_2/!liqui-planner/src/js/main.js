@@ -1,7 +1,6 @@
 "use strict";
 
 let Haushaltsbuch = {
-    euro: 100,
     gesamt_bilanz:{
         bilanz: null,
         einnahmen: null,
@@ -19,12 +18,17 @@ let Haushaltsbuch = {
         );
     },
         
-//     eintrag_ausgeben() {
-//         return (`Titel: ${this.neuer_eintrag.titel}
-// Typ: ${this.neuer_eintrag.typ}
-// Betrag: ${this.neuer_eintrag.betrag / this.euro} €
-// Datum ${this.neuer_eintrag.datum}`)
-//     },
+    eintraege_ausgeben() {
+        console.clear();
+        this.eintraege.forEach(function(eintrag) {
+            console.log(`Titel: ${eintrag.titel}\n`
+            + `Typ: ${eintrag.typ}\n`
+            + `Betrag: ${eintrag.betrag} €\n`
+            + `Datum ${eintrag.datum}`
+        );
+    });
+    
+},
 //     eintrag_mit_gesamtbilanz_verrechnen() {
 //         switch (this.neuer_eintrag.typ){
 //             case "e":
@@ -48,6 +52,7 @@ let Haushaltsbuch = {
 //    },
     eintrag_hinzufuegen() {
         this.eintrag_erfassen();
+        this.eintraege_ausgeben();
         // console.log(this.eintrag_ausgeben(this.eintrag_erfassen.titel, this.eintrag_erfassen.typ, this.eintrag_erfassen.betrag, this.eintrag_erfassen.datum));
         // this.eintrag_mit_gesamtbilanz_verrechnen(this.eintrag_erfassen.typ, this.eintrag_erfassen.betrag);
         // this.gesamt_bilanz_ausgeben(this.gesamt_bilanz.einnahmen, this.gesamt_bilanz.ausgaben, this.gesamt_bilanz.bilanz);
@@ -55,4 +60,6 @@ let Haushaltsbuch = {
 };
 
 Haushaltsbuch.eintrag_hinzufuegen()
-console.log(Haushaltsbuch);
+Haushaltsbuch.eintrag_hinzufuegen()
+Haushaltsbuch.eintrag_hinzufuegen()
+// console.log(Haushaltsbuch);
