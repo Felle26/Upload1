@@ -53,9 +53,8 @@ let Haushaltsbuch = {
     eintrag_hinzufuegen() {
         this.eintrag_erfassen();
         this.eintraege_ausgeben();
-        // console.log(this.eintrag_ausgeben(this.eintrag_erfassen.titel, this.eintrag_erfassen.typ, this.eintrag_erfassen.betrag, this.eintrag_erfassen.datum));
-        // this.eintrag_mit_gesamtbilanz_verrechnen(this.eintrag_erfassen.typ, this.eintrag_erfassen.betrag);
-        // this.gesamt_bilanz_ausgeben(this.gesamt_bilanz.einnahmen, this.gesamt_bilanz.ausgaben, this.gesamt_bilanz.bilanz);
+        this.gesamtbilanz_erstellen();
+        this.gesamt_bilanz_ausgeben();
     }
 };
 
