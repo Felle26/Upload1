@@ -57,14 +57,28 @@ let Haushaltsbuch = {
         console.log(`Einnahmen: ${this.gesamt_bilanz.einnahmen / 100}€\n`
             + `Ausgaben: ${ this.gesamt_bilanz.ausgaben / 100 }€\n`
             + `Bilanz: ${this.gesamt_bilanz.gesamt / 100}€\n`
-            + `Deine Bilanz ist positiv: ${this.gesamt_bilanz.gesamt >= 05}`
+            + `Deine Bilanz ist positiv: ${this.gesamt_bilanz.gesamt >= 0}`
         );
+   },
+   eintraege_sortieren() {
+    this.eintraege.sort(function(eintrag_a, eintrag_b) {
+        if (eintrag_a.datum > eintrag_b.datum){
+            return -1;
+        } else if (eintrag_a.datum < eintrag_b.datum) {
+            return 1;
+        } else {
+            return 0;
+        }
+
+    });
+
    },
     eintrag_hinzufuegen() {
         let eintrag_add = true;
         while(eintrag_add)
             {
             this.eintrag_erfassen();
+            this.eintraege_sortieren();
             this.eintraege_ausgeben();
             this.gesamtbilanz_erstellen();
             this.gesamt_bilanz_ausgeben();
@@ -75,3 +89,4 @@ let Haushaltsbuch = {
 
 Haushaltsbuch.eintrag_hinzufuegen()
 // console.log(Haushaltsbuch);
+console.log(Haushaltsbuch.eintraege);

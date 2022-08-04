@@ -1,0 +1,163 @@
+/* ===================================== */
+/* GENERELLES */
+/* ===================================== */
+
+*{
+    padding: 0;
+    background-color: black;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    margin-right: 0;
+    font-size: 16px;
+}
+
+/* ===================================== */
+/* TAXAMETER ALLGEMEIN */
+/* ===================================== */
+
+.taxameter{
+    position: absolute;
+    z-index: 0;
+    background-color: black;
+    width: 400px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.taxameter h1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    color: yellow;
+    background-color: black;
+    
+}
+
+.preise{
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#kilometer, #km_preis{
+    align-self: center;
+    background-color: black;
+    color: yellow;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+#preis_gesamt{
+    position: absolute;
+    text-align: right;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin-right: 10px;
+    font-size: 5rem;
+    background-color: black;
+    color: yellow;
+}
+
+.km{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+.km-anzeige{
+    color: yellow;
+    font-size: 2rem;
+    font-weight: bold;
+    align-content: center;
+}
+
+#km-anzahl{
+    width: 150px;
+    text-align: right;
+    font-size: 2rem;
+    margin-top: 10px;   
+}
+
+/* ===================================== */
+/* KILOMETER BTN BOX */
+/* ===================================== */
+.km-btn_box{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.km-btn{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: yellow;
+    border: 1px solid yellow;
+    transition: 250ms ease-in-out;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.km-btn:hover{
+    color: gray;
+    border: 1px solid gray;
+}
+span{
+    position:absolute;
+    width: 100%;
+    bottom: 220px;
+    margin: 0;
+    background-color: black;
+}
+
+/* ===================================== */
+/* BUTTONBOX */
+/* ===================================== */
+
+.buttonbox {
+    position: absolute;
+    bottom: 10px;
+    padding: 0;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.btn-select {
+    margin-bottom: 2px;
+    cursor: pointer;
+    width: 180px;
+    height: 50%;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    z-index: 1;
+    color: yellow;
+    background-color: black;
+    border: 2px solid yellow;
+    transition: 250ms ease-in-out;
+}
+
+.btn-select:hover{
+    color: gray;
+    border: 2px solid grey;
+}
+
+.active{
+    color: gray;
+    border: 2px solid grey;
+}

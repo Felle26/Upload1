@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxameter</title>
+    <link rel="stylesheet" href="./src/style.css">
+    
+</head>
+
+<body>
+    <div class="taxameter">
+        <h1>Taxameter</h1>
+        <div id="preis_gesamt">00.00€</div>
+        <span>
+            <div class="preise">
+                <div class="km">
+                    <div class="km-anzeige" id="km-anzahl">5 KM</div>
+                    <div class="km-btn_box">
+                        <button onclick="km_erhoehen()" class="km-btn">+</button>
+                        <button onclick="km_verringern()" class="km-btn">-</button>
+                    </div>
+                    <div class="km-btn_box">
+                        <button onclick="km_erhoehen_10()" class="km-btn">+10</button>
+                        <button onclick="km_verringern_10()" class="km-btn">-10</button>
+                    </div>
+                </div>
+                <div id="km_preis">0.00 €</div>  
+            </div>
+            
+        </span>
+
+
+
+        <div class="buttonbox">
+            <button id="flughafen" onclick="flughafen_fkt()" class="btn-select">Flughafen</button>
+            <button id="nacht" onclick="nacht_fkt()" class="btn-select">Nachtpr.</button>
+            <button id="tag" onclick="tag_fkt()" class="btn-select">Tagespr.</button>
+            <button id="krank" onclick="krank_fkt()" class="btn-select">krankenf.</button>
+        </div>
+
+    </div>
+    </div>
+    <script src="./src/main.js"></script>
+
+</body>
+
+</html>
