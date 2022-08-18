@@ -23,3 +23,4 @@ console.log(mein_set.has("13"));
 console.log(mein_set.has([]));
 console.log(mein_set.has({}));
 console.log(mein_set.has(function() {}));
+console.log(mein_set.has("13"));

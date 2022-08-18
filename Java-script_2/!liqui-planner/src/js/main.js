@@ -9,7 +9,8 @@ let Haushaltsbuch = {
         neuer_eintrag.set("Titel", prompt("Titel:"))
         neuer_eintrag.set("Typ", prompt("was war es --e oder a--"))
         neuer_eintrag.set("Betrag", parseInt(prompt("Der Betrag in cent:")))
-        neuer_eintrag.set("Datum", prompt("Datum JJJJ-MM-TT"))
+        neuer_eintrag.set("Datum", new Date(prompt("Datum JJJJ-MM-TT") + " 00:00:00"));
+        neuer_eintrag.set("timestamp", Date.now());
         this.eintraege.push(neuer_eintrag);
     },
         
@@ -59,9 +60,9 @@ let Haushaltsbuch = {
    },
    eintraege_sortieren() {
     this.eintraege.sort(function(eintrag_a, eintrag_b) {
-        if (eintrag_a.datum > eintrag_b.datum){
+        if (eintrag_a.get("timestamp") > eintrag_b.get("timestamp")){
             return -1;
-        } else if (eintrag_a.datum < eintrag_b.datum) {
+        } else if (eintrag_a.get("timestamp") < eintrag_b.get("timestamp")) {
             return 1;
         } else {
             return 0;
@@ -79,7 +80,7 @@ let Haushaltsbuch = {
             this.eintraege_ausgeben();
             this.gesamtbilanz_erstellen();
             this.gesamt_bilanz_ausgeben();
-            eintrag_add = confirm("Weiteren Eintrag hinzufügen?");
+             eintrag_add = confirm("Weiteren Eintrag hinzufügen?");
             };
     }
 };
