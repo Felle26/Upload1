@@ -1,63 +1,60 @@
 "use strict";
 
 let Haushaltsbuch = {
-    gesamt_bilanz:{
-        gesamt: 0,
-        einnahmen: 0,
-        ausgaben: 0
-    },
+    gesamt_bilanz: new Map(),
     eintraege: [],
      
     eintrag_erfassen() {
-        this.eintraege.push({
-            titel: prompt("was war es?"),
-            typ: prompt("e oder a"),
-            betrag: parseInt(prompt("Der Betrag in cent:")),
-            datum: prompt("Wann war es , JJJJ-MM-TT")
-            }
-        );
+        let    neuer_eintrag = new Map();
+        neuer_eintrag.set("Titel", prompt("Titel:"))
+        neuer_eintrag.set("Typ", prompt("was war es --e oder a--"))
+        neuer_eintrag.set("Betrag", parseInt(prompt("Der Betrag in cent:")))
+        neuer_eintrag.set("Datum", prompt("Datum JJJJ-MM-TT"))
+        this.eintraege.push(neuer_eintrag);
     },
         
     eintraege_ausgeben() {
         console.clear();
         this.eintraege.forEach(function(eintrag) {
-            console.log(`Titel: ${eintrag.titel}\n`
-            + `Typ: ${eintrag.typ}\n`
-            + `Betrag: ${eintrag.betrag / 100} €\n`
-            + `Datum ${eintrag.datum}`
+            console.log(`Titel: ${eintrag.get("Titel")}\n`
+            + `Typ: ${eintrag.get("Typ")}\n`
+            + `Betrag: ${eintrag.get("Betrag") / 100} €\n`
+            + `Datum: ${eintrag.get("Datum").toLocaleDateString("de-DE", {
+                year: "numeric",
+                month:"2-digit",
+                day: "2-digit"})}`
         );
     });
     
 },
-    gesamtbilanz_erstellen() {
-        let neue_gesamtbilanz = {
-            einnahmen: 0,
-            ausgaben: 0,
-            gesamt: 0
-        };
+    gesamtbilanz_erstellen(){
+        let neue_gesamtbilanz = new Map();
+            neue_gesamtbilanz.set("einnahmen", 0);
+            neue_gesamtbilanz.set("ausgaben", 0);
+            neue_gesamtbilanz.set("gesamt", 0);
+           
         this.eintraege.forEach(function (eintrag){
-            switch (eintrag.typ) {
+            switch (eintrag.get("Typ")) {
                 case "e":
-                    neue_gesamtbilanz.einnahmen += eintrag.betrag;
-                    neue_gesamtbilanz.gesamt += eintrag.betrag;
+                    neue_gesamtbilanz.set("einnahmen", neue_gesamtbilanz.get("einnahmen") + eintrag.get("Betrag"));
+                    neue_gesamtbilanz.set("gesamt", neue_gesamtbilanz.get("gesamt") + eintrag.get("Betrag"));
                     break;
                 case "a":
-                    neue_gesamtbilanz.ausgaben += eintrag.betrag;
-                    neue_gesamtbilanz.gesamt -= eintrag.betrag;
+                    neue_gesamtbilanz.set("ausgaben", neue_gesamtbilanz.get("ausgaben") + eintrag.get("Betrag"));
+                    neue_gesamtbilanz.set("gesamt", neue_gesamtbilanz.get("gesamt") - eintrag.get("Betrag"));
                     break;
                 default:
-                console.log(`${eintrag.typ} ist nicht definiert`);
+                console.log(`${eintrag.get("Typ")} ist nicht definiert`);
             }
         });
         console.log(this.gesamt_bilanz = neue_gesamtbilanz);
         
     },
     gesamt_bilanz_ausgeben() {
-        console.log(this.gesamt_bilanz);
-        console.log(`Einnahmen: ${this.gesamt_bilanz.einnahmen / 100}€\n`
-            + `Ausgaben: ${ this.gesamt_bilanz.ausgaben / 100 }€\n`
-            + `Bilanz: ${this.gesamt_bilanz.gesamt / 100}€\n`
-            + `Deine Bilanz ist positiv: ${this.gesamt_bilanz.gesamt >= 0}`
+        console.log(`Einnahmen: ${this.gesamt_bilanz.get("einnahmen") / 100}€\n`
+            + `Ausgaben: ${ this.gesamt_bilanz.get("ausgaben") / 100 }€\n`
+            + `Bilanz: ${this.gesamt_bilanz.get("gesamt") / 100}€\n`
+            + `Deine Bilanz ist positiv: ${this.gesamt_bilanz.get("gesamt") >= 0}`
         );
    },
    eintraege_sortieren() {
