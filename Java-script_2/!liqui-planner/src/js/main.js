@@ -1,7 +1,5 @@
 "use strict";
 
-
-
 let Haushaltsbuch = {
   gesamt_bilanz: new Map(),
   eintraege: [],

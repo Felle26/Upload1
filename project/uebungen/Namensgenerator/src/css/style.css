@@ -5,7 +5,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: #242424;
-    font-family: ;
+    font-family:'Courier New', Courier, monospace
     
 }
 button{
@@ -16,9 +16,19 @@ button{
     color: gold;
 }
 
-li{
+li, p{
     padding-bottom: 1rem;
+    font-size: 1.5rem;
     list-style: none;
+    color: gold;
+    font-family: 'Courier New', Courier, monospace
+}
+ul{
+    display: inline;
+    text-align: center;
+    margin-left: auto ;
+    margin-right: auto;
+    padding: 0;
 }
 
 h1{
@@ -26,14 +36,21 @@ h1{
     margin: 0;
     font-size: 4rem;
     color: gold;
+    font-family: 'Courier New', Courier, monospace
 }
 h2{
     font-size: 3rem;
     color: gold;
+    font-family: 'Courier New', Courier, monospace
 }
 span{
     font-size: 1.5rem;
     color: gold;
+}
+button{
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid gold;
+    border-radius: 5px;
 }
 
 .rahmen{
@@ -43,23 +60,48 @@ span{
     align-items: center;
 }
 
-form{
+.label{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-form > button{
+.label > button{
     font-size: 3rem;
 }
 
-form > div {
-    display:inline-block;
+.label > div {
+    padding-top: 1rem;
+    display: block;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 1000px) {
+    .label > div > label {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 620px) {
     h1{
         font-size: 3rem;
     }
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
     
+}
+
+@media (max-width: 470px) {
+    h1 {
+            font-size: 2rem;
+        }
+    h2 {
+        font-size: 1.5rem;
+    }
+
 }

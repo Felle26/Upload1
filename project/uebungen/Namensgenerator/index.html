@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namen´s Generator</title>
     <link rel="stylesheet" href="./src/css/style.css">
-    <script src="./src/js/main.js" prefer></script>
+    
 </head>
 <body>
     <div class="rahmen">
@@ -14,37 +14,33 @@
         <h1>Fantasy</h1>
         <h1>Namens Generator</h1>
 
-        <form action="generate_name" method="post">
+        <div class="label">
 
             <div>
-                <label for=""><input type="radio" name="geschlecht" id="m_w"><span>Männernamen</span></label>
-                <label for=""><input type="checkbox" name="" id=""><span>Männernamen</span></label>
-                <label for=""></label><input type="checkbox" name="" id=""><span>Männernamen: Elfen</span></label>
+                <label for="Männlich"><input onclick="updchecked()" type="radio"  name="geschlecht" id="m_select"><span>Männernamen</span></label>
+                <label for="Normal"><input onclick="updchecked()" type="checkbox" value="yes" name="m_normal" id="m_normal"><span>Männernamen</span></label>
+                <label for="Elfen"><input onclick="updchecked()" type="checkbox" name="m_elfe" id="m_elfe"><span>Männernamen: Elfen</span></label>
             </div>
 
             <div>
-                <label for=""><input type="radio" name="geschlecht" id="m_w"><span>Frauennamen</span></label>
-                <label for=""><input type="checkbox" name="" id=""><span>Frauennamen</span></label>
-                <label for=""><input type="checkbox" name="" id=""><span>Frauennamen: Elfen</span></label>
+                <label for="Weiblich"><input onclick="updchecked()" type="radio" name="geschlecht" id="w_select"><span>Frauennamen</span></label>
+                <label for="Normal"><input onclick="updchecked()" type="checkbox" name="w_normal" id="w_normal"><span>Frauennamen</span></label>
+                <label for="Elfen"><input onclick="updchecked()" type="checkbox" name="w_elfe" id="w_elfe"><span>Frauennamen: Elfen</span></label>
             </div>
         
-            <button type="submit">Generieren</button>
+            <button onclick="name_generate(frauen_namen, nachnamen); return false;">Generieren</button>
         
-        </form>
+        </div>
 
-        <h2 id="nameID">John Doe</h2>
-        <ul>
-            <li><button>Name 1</button></li>
-            <li><button>Name 2</button></li>
-            <li><button>Name 3</button></li>
-            <li><button>Name 4</button></li>
-            <li><button>Name 5</button></li>
-            <button>Liste Leeren</button>
+        <h2 id="nameID">Name</h2>
+        <p>Hier stehen die letzen 5 generierten Namen</p>
+        <ul id="nameList">
+            <button onclick="liste_leeren()">Liste Leeren</button>
+            
         </ul>
         
     </div>
 
-    <
-    
+<script src="./src/js/main.js"></script>
 </body>
 </html>

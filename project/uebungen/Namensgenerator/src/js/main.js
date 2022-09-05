@@ -438,8 +438,8 @@ let maenner_elfen_namen = false;
 let frauennamen = false;
 let frauen_elfen_namen = false;
 
-let maenner_auswahl = true;
-let frauen_auswahl = true;
+let maenner_auswahl = false;
+let frauen_auswahl = false;
 
 let generierter_name = "Leer"
 
@@ -452,17 +452,20 @@ function zufalls_erstellen(namen_array){
     return(zufalls_zahl_namen = Math.floor(Math.random() * (namen_array.length + 1)))    
 }
 
-
+// Namen hinzufügen
+function add_name(name){
+    document.getElementById("nameID").innerHTML = name;
+};
 
 //Männer Namen Generate
-function maenner_namen_generate(namen, nachnamen) {
-    let name = `${namen[zufalls_erstellen(namen)]} ${nachnamen[zufalls_erstellen(nachnamen)]}`;
-        
-    generierte_liste.unshift(name)
 
-    if(generierte_liste.length >=6){
-        generierte_liste.pop()
-    }
+
+function update_namelist(){
+document
+  .querySelector("#nameList").insertAdjacentHTML("afterbegin",`<li class="listitem">${generierte_liste[0]}</li>`);
+if (document.querySelectorAll("ul>li").length >= 6) {
+    document.querySelector("li:last-of-type").remove();
+}    
 };
 
 
