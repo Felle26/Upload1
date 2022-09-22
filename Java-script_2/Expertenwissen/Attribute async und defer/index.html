@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Das Document Object Model</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <!-- <script src="main.js" async></script> -->
+    <!-- Ohne asynch- und defer-Attribut wird Script
+    ausgeführt bevor Seite weiter geparsed wird-->
+
+    <!-- mit asynch-Attribut wird Script asynchron im Hintergunr ausgeführt,
+    während die Seite weiter geparsed wird -->
+</head>
+<body>
+<div id="test">
+    Ich bin ein &lt;div&gt;-Element
+</div>
+    <!-- mit defer-Attribut wirda das Script erst ausgeführt, wenn die Seite
+    Vollständig geparsed wrude,
+    Trotzdem kann es ratsam sein, Scripte direkt vor dem </body>-Tag einzubinden -->
+</body>
+</html>

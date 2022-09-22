@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Das Document Object Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav id="navigation">
+        <ul>
+            <li><a class="active" href="#">Startseite</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+    </nav>
+    
+    <article class="jumbotron">
+
+        <header>
+            <h2>Login</h2>
+        </header>
+
+        <form action="login.html" method="get">
+            <input type="text" name="nutzername" placeholder="Nutzername" id="nutzername">
+            <input type="password" name="passwort" placeholder="Passwort" id="passwort">
+            <button type="submit">Anmelden</button>
+            <button type="reset">Zurücksetzen</button>
+        </form>
+        
+    </article>
+
+    <script src="main.js" defer></script>
+</body>
+</html>

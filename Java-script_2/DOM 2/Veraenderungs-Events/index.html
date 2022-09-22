@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Das Document Object Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav id="navigation">
+        <ul>
+            <li><a class="active" href="#">Startseite</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+    </nav>
+    
+    <article class="jumbotron">
+        <header>
+            <h2>Veränderungs-Events</h2>
+            <hr>
+        </header>
+        <section>
+            <h3>Input</h3>
+            <input type="text" name="input">
+            <h3>Textarea</h3>
+            <textarea name="textarea" cols="30" rows="10"></textarea>
+            <h3>Checkbox</h3>
+            <input type="checkbox" name="checkbox" value="1">
+            <input type="checkbox" name="checkbox" value="2">
+            <input type="checkbox" name="checkbox" value="3">
+            <h3>Radio-Buttons</h3>
+            <input type="radio" name="radio" value="Banane">
+            <input type="radio" name="radio" value="Apfel">
+            <input type="radio" name="radio" value="Kiwi">
+            <h3>Range</h3>
+            <input type="range" name="range" min="0" max="10">
+        </section>
+    </article>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
