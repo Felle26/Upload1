@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../python"
+		},
+		{
+			"path": "../react_playground"
+		},
+		{
+			"path": "../angular"
+		},
+		{
+			"path": "HTML_CSS"
+		},
+		{
+			"path": "Java-script"
+		},
+		{
+			"path": "project"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Java-script"
+	}
+}
