@@ -47,7 +47,7 @@ class Eintrag {
 
     let titel = document.createElement("span");
     titel.setAttribute("class", "titel");
-    this._titel;
+    titel.textContent = this._titel;
     datum.insertAdjacentElement("afterend", titel);
 
     let betrag = document.createElement("span");

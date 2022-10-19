@@ -64,7 +64,6 @@ constructor(){
   
   _datum_aktualisieren(){
     let datum_input = document.querySelector("#datum")
-    //Datum auf den heutigen Tag setzen
     if( datum_input !== null){
         document.querySelector("#datum").valueAsDate = new Date();
     }

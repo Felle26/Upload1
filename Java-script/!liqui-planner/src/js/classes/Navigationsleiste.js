@@ -4,6 +4,7 @@ class Navigationsleiste {
     constructor(){
         this._html = this._html_generieren()
     }
+
     _html_generieren(){
         let navigationsleiste = document.createElement("nav")
         navigationsleiste.setAttribute("id", "navigationsleiste");
@@ -14,12 +15,11 @@ class Navigationsleiste {
         let span = document.createElement("span");
         span.setAttribute("id", "markenname");
         span.textContent = "Liqui-Planner"
+        anker.insertAdjacentElement("afterbegin", span);
 
-    anker.insertAdjacentElement("afterbegin", span);
+        navigationsleiste.insertAdjacentElement("afterbegin", anker);
 
-    navigationsleiste.insertAdjacentElement("afterbegin", anker);
-
-    return navigationsleiste;
+        return navigationsleiste;
     }
 
     anzeigen(){
@@ -28,7 +28,5 @@ class Navigationsleiste {
 {
     body.insertAdjacentElement("afterbegin", this._html);
 }    }
-    // <nav id="navigationsleiste">
-    //     <a href="index.html"><span id="markenname">Liqui-Planner</span></a>
-    // </nav>
+
 }
