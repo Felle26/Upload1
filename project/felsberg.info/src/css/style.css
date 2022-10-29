@@ -4,6 +4,9 @@ section{min-height: 100%;}
 
 a{text-decoration: none;}
 
+a:active, :focus, :visited{color: ivory;}
+
+
 li{list-style-type: none;}
 
 h1, h2, h3{ font-family: 'Open Sans', sans-serif; font-weight: 500; color: ivory; text-transform: uppercase; }
@@ -97,6 +100,61 @@ header nav ul li:hover{ color: grey; transition: 300ms; -webkit-transition: 300m
     width: 70vw;
     font-size: 20px;
     margin: 0px auto 0px auto;
+}
+#About ul{
+    padding-top: 50px;
+}
+
+#About div ul li {
+    padding-left: 0;
+    text-align: center;
+    text-decoration: none;
+    color: ivory;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+#About div{
+    display: flex;
+        flex-direction: row;
+
+}
+#stack-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#stac-box ul{
+    padding: 0;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#pic_1{
+    width: 0;
+    height: auto;
+    animation: 2ms ease-in-out;
+    
+}
+.pic_hover{
+    padding-top: 50px;
+        width: 80vh;
+        height: auto;
+}
+
+#pic_2 {
+    width: 0;
+    height: 0;
+    animation: 2ms ease-in-out;
+
+}
+
+#pic_2:hover {
+    padding-top: 50px;
+    width: 80vh;
+    height: auto;
 }
 
 .Arrows{
