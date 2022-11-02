@@ -13,16 +13,16 @@
 			"path": "HTML_CSS"
 		},
 		{
-			"path": "project"
-		},
-		{
 			"path": "C:/Users/sebas/Desktop/text_adventure"
 		},
 		{
 			"path": "C:/xampp/htdocs/Java-script"
+		},
+		{
+			"path": "C:/xampp/htdocs/project"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Java-script"
+		"liveServer.settings.multiRootWorkspaceName": "project"
 	}
 }
