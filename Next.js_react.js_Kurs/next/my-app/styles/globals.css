@@ -1,0 +1,51 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+h2{
+list-style-type: none;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    transition: color, border 1s;
+    padding: 10px;
+    }
+h2:hover{
+  color:aqua;
+    border: 2px solid aqua;
+    border-radius: 50px;
+    transition: color, border 1ms;
+}
+div > span:nth-of-type(1) {
+  /* Created with https://www.css-gradient.com */
+color:  -webkit-linear-gradient(bottom, #FF0197, #01ABFF);
+color:  -moz-linear-gradient(bottom, #FF0197, #01ABFF);
+color:  linear-gradient(to top, #FF0197, #01ABFF);;
+}
+
+div > span {
+  font-size: 30px;
+  font-weight: 700;
+}

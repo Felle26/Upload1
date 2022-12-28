@@ -1,0 +1,18 @@
+.linknav{
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+    color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+    border-radius: 10px;
+}
+.linknav:hover{
+    transition: box-shadow ease-in-out 150ms;
+    box-shadow: 0px 0px 20px cornflowerblue;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    flex-wrap: wrap;
+}
